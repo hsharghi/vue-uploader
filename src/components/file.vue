@@ -100,7 +100,9 @@
           audio: ['mp3', 'wav', 'wma', 'ogg', 'aac', 'flac'],
           document: ['doc', 'txt', 'docx', 'pages', 'epub', 'pdf', 'numbers', 'csv', 'xls', 'xlsx', 'keynote', 'ppt', 'pptx', 'zip']
         }
+        console.log("extension: " + extension)
         Object.keys(typeMap).forEach((_type) => {
+          console.log("type: " + _type)
           const extensions = typeMap[_type]
           if (extensions.indexOf(extension) > -1) {
             type = _type
